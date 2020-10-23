@@ -2,7 +2,7 @@
  * @Author       : yznaisy
  * @Date         : 2020-10-23 23:12:35
  * @LastEditors  : yznaisy
- * @LastEditTime : 2020-10-23 23:32:36
+ * @LastEditTime : 2020-10-23 23:59:47
  */
 import {
   onMounted,
@@ -30,7 +30,5 @@ export default function useTodos() {
   return {
     todos,
     addTodo,
-    // fetchTodos
-
   }
 }
