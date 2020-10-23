@@ -2,7 +2,7 @@
  * @Author       : yznaisy
  * @Date         : 2020-10-10 22:19:39
  * @LastEditors  : yznaisy
- * @LastEditTime : 2020-10-23 23:38:26
+ * @LastEditTime : 2020-10-23 23:53:27
 -->
 <template>
 	<div class="filters">
@@ -22,16 +22,16 @@
 </template>
 
 <script>
-import { reactive } from "vue";
+// import { reactive } from "vue";
 export default {
   name: "TodoFilter",
   props: ["selected"],
   setup() {
-    const filters = reactive([
+    const filters =[
       { label: "全部", value: "all" },
       { label: "已完成", value: "done" },
       { label: "未完成", value: "todo" },
-    ]);
+    ];
 
     return { filters };
   },

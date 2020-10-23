@@ -9,7 +9,7 @@ export default function useFilteredTodos(todos) {
       case "done":
         return todos.value.filter((todo) => todo.completed);
       case "todo":
-        return todos.value.filter((todo) => todo.completed)
+        return todos.value.filter((todo) => !todo.completed);
       default:
         return todos.value
     }
